@@ -6,7 +6,6 @@ Centralizar toda a aplicação de interface do usuário construída com **React 
 ## Conteúdo Armazenado
 - Código-fonte da interface, rotas, layouts, páginas, componentes, serviços de conexão com o backend, hooks, tipagens, estilos, utilitários e assets (`src/`);
 - Arquivos estáticos servidos diretamente sem processamento pelo bundler (`public/`);
-- Suíte de testes automatizados (`tests/`);
 - Arquivos de configuração da stack e execução local do servidor de desenvolvimento (na raiz de `frontend/`).
 
 ## Responsabilidades
@@ -28,5 +27,4 @@ O frontend organiza seu código-fonte dentro do contêiner `src/`, além de `pub
 - `src/types/` — Tipagens e interfaces TypeScript compartilhadas;
 - `src/styles/` — Estilos globais, diretivas do TailwindCSS e variáveis de tema;
 - `src/lib/` — Utilitários puros e helpers de bibliotecas (como `cn()` do shadcn/ui);
-- `src/assets/` — Recursos estáticos importados pelo código e otimizados no build;
-- `tests/` — Testes automatizados (unitários e de integração).
+- `src/assets/` — Recursos estáticos importados pelo código e otimizados no build.

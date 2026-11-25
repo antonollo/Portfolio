@@ -1,4 +1,4 @@
-# project-patterns
+# Portfolio:
 
 Repositório privado com uma **estrutura padronizada de diretórios** para projetos de desenvolvimento de software em formato **monorepo**.
 
@@ -6,20 +6,16 @@ Repositório privado com uma **estrutura padronizada de diretórios** para proje
 
 ## Premissas do Repositório
 
-1. **Monorepo:** `backend/`, `frontend/` e `docs/` versionados juntos no mesmo repositório;
-2. **Backend:** Padrão voltado para **Python + FastAPI + uv**, contemplando esquema de segurança, conexões (banco de dados e integrações externas), serviços de LLMs e testes automatizados;
-3. **Frontend:** Padrão voltado para **React + React-Router + TypeScript + TailwindCSS + shadcn/ui**, contemplando esquemas de conexão com o backend e espaço preparado para testes automatizados;
-4. **Documentação (`docs/`):** Centralização dos artefatos de Gestão (inspiração PMBOK), Especificações (SDD), Decisões Técnicas (ADRs) e Contratos.
+1. **Monorepo:** `frontend/` versionado;
+2. **Frontend:** Padrão voltado para **React + React-Router + TypeScript + TailwindCSS + shadcn/ui**, contemplando esquemas de conexão com o backend e espaço preparado para testes automatizados;
 
 ## Pilares do Projeto
 
 | Diretório | Papel no Monorepo | Documentação |
 | :--- | :--- | :--- |
-| `backend/` | API, regras de negócio, segurança, conexões e serviços de LLMs (FastAPI + uv) | [backend/README.md](./backend/README.md) |
 | `frontend/` | Interface web, rotas, componentes e comunicação com a API (React + TS + Tailwind + shadcn/ui) | [frontend/README.md](./frontend/README.md) |
-| `docs/` | Artefatos centralizados de gestão, especificações (SDD), ADRs e contratos | [docs/README.md](./docs/README.md) |
 
 ## Convenção de Documentação da Estrutura
 
 - **Diretórios principais:** Possuem um `README.md` descrevendo finalidade, conteúdo armazenado, responsabilidades e mapa de subdiretórios.
-- **Subdiretórios:** Não possuem documentação própria; contêm exclusivamente um arquivo `.gitkeep` para preservação da estrutura no Git até que recebam arquivos reais do projeto.
+- **Subdiretórios:** Não possuem documentação própria;
