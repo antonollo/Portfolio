@@ -1,20 +1,24 @@
 # Frontend
 
 ## Finalidade
+
 Centralizar toda a aplicação de interface do usuário construída com **React + React-Router + TypeScript + TailwindCSS + shadcn/ui**, separando o código-fonte (`src/`), arquivos públicos estáticos (`public/`), testes automatizados (`tests/`) e arquivos de configuração que residem na raiz deste diretório (como `package.json`, `tsconfig.json`, `vite.config.ts`, `components.json` e `.env.example`).
 
 ## Conteúdo Armazenado
+
 - Código-fonte da interface, rotas, layouts, páginas, componentes, serviços de conexão com o backend, hooks, tipagens, estilos, utilitários e assets (`src/`);
 - Arquivos estáticos servidos diretamente sem processamento pelo bundler (`public/`);
 - Arquivos de configuração da stack e execução local do servidor de desenvolvimento (na raiz de `frontend/`).
 
 ## Responsabilidades
+
 - Entregar uma interface responsiva, tipada e consistente com TailwindCSS e componentes shadcn/ui;
 - Gerenciar navegação entre telas e proteção de rotas com React-Router;
 - Centralizar toda a comunicação HTTP com o backend em `src/services/`, evitando chamadas soltas dentro de componentes;
 - Manter separação clara entre componentes base de UI (`components/ui/`), componentes de produto (`components/common/`), layouts e páginas.
 
 ## Subdiretórios
+
 O frontend organiza seu código-fonte dentro do contêiner `src/`, além de `public/` e `tests/` na raiz:
 
 - `public/` — Arquivos estáticos servidos diretamente na raiz (ex.: `favicon.ico`, `robots.txt`);
