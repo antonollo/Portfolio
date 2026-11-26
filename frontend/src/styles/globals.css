@@ -20,4 +20,28 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* [MOTION] Reserva o espaço da barra de rolagem: quando o preloader [M1]
+     trava o scroll, a barra some sem empurrar o conteúdo para o lado. */
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+/* [MOTION] Cursor piscante do [M6], ativo apenas durante a digitação. */
+[data-animate="footer-typing"].is-typing::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.85em;
+  margin-left: 0.08em;
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  animation: typing-cursor 0.8s steps(1, end) infinite;
+}
+
+@keyframes typing-cursor {
+  50% {
+    opacity: 0;
+  }
 }
