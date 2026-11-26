@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #1B1521;
+  --color-brand: #CC2936;
+  --color-ink: #F7F3E3;
+
+  --font-display: "BBH Bogle", "Bebas Neue", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-button: "Raleway", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
