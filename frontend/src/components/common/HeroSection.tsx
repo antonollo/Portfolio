@@ -75,8 +75,8 @@ export function HeroSection() {
                   name={tech.key}
                   label={tech.label}
                   className={
-                    tech.key === 'scikit-learn'
-                      ? 'h-8 w-12 sm:h-9 sm:w-13'
+                    tech.key === 'scikit-learn' || tech.key === 'n8n'
+                      ? 'h-8 w-14 sm:h-9 sm:w-16'
                       : 'h-8 w-8 sm:h-9 sm:w-9'
                   }
                 />

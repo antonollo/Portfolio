@@ -108,7 +108,9 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
                   name={tech.key}
                   label={tech.label}
                   className={
-                    tech.key === 'scikit-learn' ? 'h-6 w-9' : 'h-6 w-6'
+                    tech.key === 'scikit-learn' || tech.key === 'n8n'
+                      ? 'h-6 w-11'
+                      : 'h-6 w-6'
                   }
                 />
               </li>

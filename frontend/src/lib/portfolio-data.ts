@@ -22,6 +22,7 @@ export const PROFILE_LINKS: ProfileLinks = {
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Intro', href: '#intro' },
   { label: 'Case Studies', href: '#case-studies' },
+  { label: 'Sobre Mim', href: '#sobre-mim' },
   { label: 'Ferramentas', href: '#ferramentas' },
   { label: 'Contatos', href: '#contatos' },
 ]
@@ -75,7 +76,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { key: 'pandas', label: 'Pandas' },
     ],
     ctaLabel: 'Ver Artigos de Pesquisa',
-    href: 'https://github.com/antonollo',
+    href: 'https://github.com/antonollo/dialog-researchs',
   },
   {
     id: 'gestock',
@@ -95,7 +96,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { key: 'scikit-learn', label: 'Scikit-learn' },
     ],
     ctaLabel: 'Conhecer o Gestock',
-    href: 'https://github.com/antonollo',
+    href: 'https://github.com/klissiadev/gestock',
   },
   {
     id: 'tedi-controle-inscritos',
@@ -116,7 +117,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { key: 'tailwindcss', label: 'TailwindCSS' },
     ],
     ctaLabel: 'Conhecer o TEDI',
-    href: 'https://github.com/antonollo',
+    href: 'https://github.com/CgB-system/EC45G---Certificadora-Da-Compet-ncia-1---C51-2026_02-',
   },
   {
     id: 'algoritmos-geneticos-pcctp',
@@ -136,11 +137,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     stackIcons: [
       { key: 'python', label: 'Python' },
-      { key: 'scikit-learn', label: 'Scikit-learn' },
-      { key: 'pandas', label: 'Pandas' },
     ],
     ctaLabel: 'Ver Projeto',
-    href: 'https://github.com/antonollo',
+    href: 'https://github.com/antonollo/Algoritmos-Geneticos-para-PCCTP',
   },
 ]
 
@@ -239,13 +238,24 @@ export const TOOLS_LIST: ToolItem[] = [
     category: 'Design System',
   },
   { id: 'nodejs', name: 'Node.js', icon: 'nodejs', category: 'Backend' },
-  { id: 'docker', name: 'Docker', icon: 'docker', category: 'Infra & MLOps' },
   { id: 'git', name: 'Git', icon: 'git', category: 'Versionamento' },
   {
     id: 'postgresql',
     name: 'PostgreSQL',
     icon: 'postgresql',
     category: 'Banco de Dados',
+  },
+  {
+    id: 'shadcn/ui',
+    name: 'shadcn/ui',
+    icon: 'shadcn/ui',
+    category: 'Estilização',
+  },
+  {
+    id: 'n8n',
+    name: 'n8n',
+    icon: 'n8n',
+    category: 'Automação',
   },
 ]
 
