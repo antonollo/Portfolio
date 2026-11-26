@@ -1,5 +1,6 @@
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { HERO_CONTENT } from '../../lib/portfolio-data'
+import { HeroWaves } from './HeroWaves'
 import { TechIcon } from './TechIcon'
 
 export function HeroSection() {
@@ -12,7 +13,9 @@ export function HeroSection() {
         data-animate="hero-waves"
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
-      />
+      >
+        <HeroWaves />
+      </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-12">
         <div
