@@ -27,8 +27,8 @@ export function ToolsSection() {
                     name={tool.icon}
                     label={groupIndex === 0 ? tool.name : undefined}
                     className={
-                      tool.icon === 'scikit-learn'
-                        ? 'h-8 w-12 text-brand'
+                      tool.icon === 'scikit-learn' || tool.icon === 'n8n'
+                        ? 'h-8 w-14 text-brand'
                         : 'h-8 w-8 text-brand'
                     }
                   />
