@@ -372,11 +372,17 @@ function setupAboutParagraphs({ root, safe }: MotionEnv) {
 }
 
 /**
- * Timeline com `scrub: 1` e duração total 1 → posições = progresso do scroll.
- * - desktop: trigger = seção; 0–50% nada · 50–75% revela · 75–100% crossfade.
- *   `end: 'bottom bottom'` garante tudo concluído ANTES de sair da seção.
- * - mobile: no grid de 1 coluna o retrato fica no TOPO da seção; aos 50% da
- *   seção ele já estaria saindo da tela. Então o trigger é o próprio retrato.
+ * Timeline com `scrub: 1` e duração total 1.0 → posições = progresso do scroll.
+ * Ciclo completo (ida e volta) concluído antes de o usuário deixar `#sobre-mim`:
+ * - 0.00 -> 0.25: retrato entra em `antonollo_vermelho.jpg` (`opacity: 0 -> 1, scale: 0.96 -> 1`)
+ * - 0.35 -> 0.55: crossfade de ida (`stylized` `opacity: 1 -> 0`, revelando `antonollo_original.png`)
+ * - 0.55 -> 0.70: permanência em `antonollo_original.png` no centro da leitura
+ * - 0.70 -> 0.92: crossfade de retorno (`stylized` `opacity: 0 -> 1`, restaurando `antonollo_vermelho.jpg`)
+ * - 0.92 -> 1.00: margem estabilizada em `antonollo_vermelho.jpg`
+ *
+ * No mobile (grid de 1 coluna), o retrato fica no topo da seção; ancorar o
+ * trigger no próprio `portrait` (`top 90%` -> `top 12%`) garante que todo o
+ * ciclo ocorra enquanto a foto está 100% visível abaixo da Navbar fixa.
  */
 function setupAboutPortrait(root: HTMLElement, layout: 'desktop' | 'mobile') {
   const section = root.querySelector<HTMLElement>(sel('about-section'))
@@ -385,28 +391,33 @@ function setupAboutPortrait(root: HTMLElement, layout: 'desktop' | 'mobile') {
   if (!section || !portrait || !stylized) return
 
   const isDesktop = layout === 'desktop'
-  const reveal = isDesktop ? { at: 0.5, duration: 0.25 } : { at: 0, duration: 0.4 }
-  const crossfade = isDesktop ? { at: 0.75, duration: 0.25 } : { at: 0.5, duration: 0.5 }
 
   gsap
     .timeline({
       defaults: { ease: 'none' },
       scrollTrigger: isDesktop
-        ? { trigger: section, start: 'top bottom', end: 'bottom bottom', scrub: 1 }
-        : { trigger: portrait, start: 'top 85%', end: 'center 35%', scrub: 1 },
+        ? { trigger: section, start: 'top 85%', end: 'bottom 80%', scrub: 1 }
+        : { trigger: portrait, start: 'top 90%', end: 'top 12%', scrub: 1 },
     })
     .fromTo(
       portrait,
       { opacity: 0, scale: 0.96 },
-      { opacity: 1, scale: 1, duration: reveal.duration },
-      reveal.at,
+      { opacity: 1, scale: 1, duration: 0.25 },
+      0,
     )
     .fromTo(
       stylized,
       { opacity: 1 },
-      { opacity: 0, duration: crossfade.duration },
-      crossfade.at,
+      { opacity: 0, duration: 0.2 },
+      0.35,
     )
+    .fromTo(
+      stylized,
+      { opacity: 0 },
+      { opacity: 1, duration: 0.22, immediateRender: false },
+      0.7,
+    )
+    .to({}, { duration: 0.08 }, 0.92)
 }
 
 /* ========================================================================== */

@@ -159,7 +159,14 @@ export function HeroWaves() {
   )
 
   return (
-    <div ref={rootRef} className="absolute inset-0">
+    <div
+      ref={rootRef}
+      className="absolute inset-0"
+      style={{
+        maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
+        WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
+      }}
+    >
       {layers.map((layer) => (
         <svg
           key={layer.id}
