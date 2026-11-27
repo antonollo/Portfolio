@@ -74,7 +74,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { key: "scikit-learn", label: "Scikit-learn" },
       { key: "pandas", label: "Pandas" },
     ],
-    ctaLabel: "Ver Artigos de Pesquisa",
+    ctaLabel: "Ver GitHub",
     href: "https://github.com/antonollo/dialog-researchs",
   },
   {
