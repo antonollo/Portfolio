@@ -87,16 +87,22 @@ export interface CaseStudy {
   href: string;
 }
 
-export interface AboutParagraph {
+export interface AboutChapter {
   id: string;
-  variant: "body" | "callout" | "placeholder";
+  number: string;
+  title: string;
   segments: TextSegment[];
+  tags: string[];
 }
 
 export interface AboutContent {
-  title: string;
-  paragraphs: AboutParagraph[];
+  badge: string;
+  titleLead: string;
+  titleAccent: string;
   portraitAlt: string;
+  portraitCaption: string;
+  portraitBadge: string;
+  chapters: AboutChapter[];
 }
 
 export interface ToolItem {
