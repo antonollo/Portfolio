@@ -14,7 +14,7 @@ export const PROFILE_LINKS: ProfileLinks = {
   githubLabel: "ANTONOLLO",
   linkedinUrl: "https://www.linkedin.com/in/antonio-gabriel-0666972b6/",
   linkedinLabel: "ANTONIO GABRIEL",
-  cvUrl: "../../public/Antonio_CV.pdf",
+  cvUrl: "/Antonio_CV.pdf",
   cvLabel: "Currículo",
 };
 
