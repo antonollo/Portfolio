@@ -1,21 +1,25 @@
 # Portfolio:
 
-Repositório privado com uma **estrutura padronizada de diretórios** para projetos de desenvolvimento de software em formato **monorepo**.
+<svg width="full" height="full" viewBox="0 0 226 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="250" fill="#CC2936"/>
+<path d="M48.132 44L51.597 20.9H57.636L61.134 44H56.349L56.019 40.832H53.313L52.95 44H48.132ZM54.204 32.846L53.808 36.245H55.524L55.161 32.846L54.996 28.127H54.402L54.204 32.846ZM62.5313 44V20.9H67.3163L71.0123 33.077V20.9H75.5333V44H70.7483L67.0523 31.823V44H62.5313ZM81.0353 44V25.454H76.9103V20.9H89.9123V25.454H85.7873V44H81.0353ZM96.8323 44.528C95.5563 44.528 94.4233 44.198 93.4333 43.538C92.4653 42.856 91.6953 41.921 91.1233 40.733C90.5733 39.545 90.2983 38.181 90.2983 36.641V28.226C90.2983 26.686 90.5733 25.333 91.1233 24.167C91.6953 22.979 92.4653 22.055 93.4333 21.395C94.4233 20.713 95.5563 20.372 96.8323 20.372C98.1083 20.372 99.2303 20.713 100.198 21.395C101.188 22.055 101.958 22.979 102.508 24.167C103.08 25.333 103.366 26.686 103.366 28.226V36.641C103.366 38.181 103.08 39.545 102.508 40.733C101.958 41.921 101.188 42.856 100.198 43.538C99.2303 44.198 98.1083 44.528 96.8323 44.528ZM96.8323 39.908C97.9323 39.908 98.4823 38.962 98.4823 37.07V27.83C98.4823 25.938 97.9323 24.992 96.8323 24.992C95.7323 24.992 95.1823 25.938 95.1823 27.83V37.07C95.1823 38.962 95.7323 39.908 96.8323 39.908ZM105.36 44V20.9H110.145L113.841 33.077V20.9H118.362V44H113.577L109.881 31.823V44H105.36ZM126.867 44.528C125.591 44.528 124.458 44.198 123.468 43.538C122.5 42.856 121.73 41.921 121.158 40.733C120.608 39.545 120.333 38.181 120.333 36.641V28.226C120.333 26.686 120.608 25.333 121.158 24.167C121.73 22.979 122.5 22.055 123.468 21.395C124.458 20.713 125.591 20.372 126.867 20.372C128.143 20.372 129.265 20.713 130.233 21.395C131.223 22.055 131.993 22.979 132.543 24.167C133.115 25.333 133.401 26.686 133.401 28.226V36.641C133.401 38.181 133.115 39.545 132.543 40.733C131.993 41.921 131.223 42.856 130.233 43.538C129.265 44.198 128.143 44.528 126.867 44.528ZM126.867 39.908C127.967 39.908 128.517 38.962 128.517 37.07V27.83C128.517 25.938 127.967 24.992 126.867 24.992C125.767 24.992 125.217 25.938 125.217 27.83V37.07C125.217 38.962 125.767 39.908 126.867 39.908ZM135.396 44V20.9H140.214V39.446H148.398V44H135.396ZM149.736 44V20.9H154.554V39.446H162.738V44H149.736ZM169.535 44.528C168.259 44.528 167.126 44.198 166.136 43.538C165.168 42.856 164.398 41.921 163.826 40.733C163.276 39.545 163.001 38.181 163.001 36.641V28.226C163.001 26.686 163.276 25.333 163.826 24.167C164.398 22.979 165.168 22.055 166.136 21.395C167.126 20.713 168.259 20.372 169.535 20.372C170.811 20.372 171.933 20.713 172.901 21.395C173.891 22.055 174.661 22.979 175.211 24.167C175.783 25.333 176.069 26.686 176.069 28.226V36.641C176.069 38.181 175.783 39.545 175.211 40.733C174.661 41.921 173.891 42.856 172.901 43.538C171.933 44.198 170.811 44.528 169.535 44.528ZM169.535 39.908C170.635 39.908 171.185 38.962 171.185 37.07V27.83C171.185 25.938 170.635 24.992 169.535 24.992C168.435 24.992 167.885 25.938 167.885 27.83V37.07C167.885 38.962 168.435 39.908 169.535 39.908Z" fill="#F7F3E3"/>
+</svg>
 
-> **Nota conceitual:** Esta estrutura define *organização de diretórios por responsabilidade* — ela **não impõe** um estilo arquitetural rígido (como Clean Architecture ou Hexagonal Architecture), permitindo que cada projeto evolua no nível de complexidade adequado ao seu contexto.
+> **Nota conceitual:** Esta estrutura define _organização de diretórios por responsabilidade_ — ela **não impõe** um estilo arquitetural rígido (como Clean Architecture ou Hexagonal Architecture).
 
 ## Premissas do Repositório
 
-1. **Monorepo:** `frontend/` versionado;
-2. **Frontend:** Padrão voltado para **React + React-Router + TypeScript + TailwindCSS + shadcn/ui**, contemplando esquemas de conexão com o backend e espaço preparado para testes automatizados;
+Este repositório visa tornar público o acesso ao código-fonte do meu portfólio técnico, atualmente disponível também no [Vercel](https://antonolloportfolio.vercel.app).
+
+Este repositório é produto de um laboratório de experimentação de Agentic SDLC, SDD (Spec-Driven Development) e Orquestração Linear de Agentes de IA, como Spec-Agent (especificações com `Openspec`), UI-Agent (planejamento e desenho de arquitetura), QA (Quality Assurance) Agent e Motion-Agent (animações com GSAP). Os esboços das telas foram originalmente desenhados a punho no **Figma**.
 
 ## Pilares do Projeto
 
-| Diretório | Papel no Monorepo | Documentação |
-| :--- | :--- | :--- |
-| `frontend/` | Interface web, rotas, componentes e comunicação com a API (React + TS + Tailwind + shadcn/ui) | [frontend/README.md](./frontend/README.md) |
+| Diretório   | Papel no Monorepo                                                                                                   | Documentação                               |
+| :---------- | :------------------------------------------------------------------------------------------------------------------ | :----------------------------------------- |
+| `frontend/` | Interface web, rotas, componentes e comunicação com a API (React + TS + Tailwind + GSAP + Lenis + React-Router-DOM) | [frontend/README.md](./frontend/README.md) |
 
-## Convenção de Documentação da Estrutura
+## Convenção de Documentação da Estrutura:
 
 - **Diretórios principais:** Possuem um `README.md` descrevendo finalidade, conteúdo armazenado, responsabilidades e mapa de subdiretórios.
 - **Subdiretórios:** Não possuem documentação própria;
