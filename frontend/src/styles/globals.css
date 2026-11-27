@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #1B1521;
+  --color-brand: #CC2936;
+  --color-ink: #F7F3E3;
+
+  --font-display: "BBH Bogle", "Bebas Neue", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-button: "Raleway", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+[data-animate="footer-typing"].is-typing::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.85em;
+  margin-left: 0.08em;
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  animation: typing-cursor 0.8s steps(1, end) infinite;
+}
+
+@keyframes typing-cursor {
+  50% {
+    opacity: 0;
+  }
+}
